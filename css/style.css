@@ -1,0 +1,41 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px, auto, 50px 50px 50px 50px 50px 50px;
+    background-image: url("../images/background.jpeg");
+}
+
+
+img{
+    width: 125px; 
+    margin-bottom: 10px; 
+    grid-column: 2;
+ }
+
+div{
+    padding: 25px; 
+    margin:5px; 
+    display: flex;
+
+ }
+
+h1{
+    display: flex;
+    justify-content: center;
+ }
+
+ 
+
+background-image: url("../images/background.jpeg");
+
+#mystuff{
+    display: grid;
+
+}
+
+
+@media all and (min-width: 800px){
+
+
+
+}
