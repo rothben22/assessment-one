@@ -1,8 +1,8 @@
 main{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 50px, auto, 50px 50px 50px 50px 50px 50px;
-    background-image: url("../images/background.jpeg");
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    background-image: url("https://rothben22.github.io/assessment-one/images/background.jpeg");
 }
 
 
@@ -10,32 +10,45 @@ img{
     width: 125px; 
     margin-bottom: 10px; 
     grid-column: 2;
+    grid-row: 2;
+    size: auto;
  }
 
 div{
     padding: 25px; 
     margin:5px; 
     display: flex;
+    grid-row-start: 3;
 
  }
 
 h1{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-column: 2;
+    text-transform: lowercase;
  }
 
  
 
-background-image: url("../images/background.jpeg");
 
 #mystuff{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 
 
 }
 
 
 @media all and (min-width: 800px){
 
-
-
+    #mystuff{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        outline: black 2px solid;
+    
+    }
+    div:nth-child(odd){
+        outline: black 2px solid;
+    }
 }
